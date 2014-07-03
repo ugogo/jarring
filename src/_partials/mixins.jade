@@ -1,0 +1,46 @@
+mixin btn(text)
+  .btn-container
+    a.btn(href="#") #{text}
+
+mixin news()
+  li.col3
+    a(href="#")
+      img.cover.news-cover(src="imgs/mat3r-dolorosa.jpg")
+      h2.news-title Mat3r Dolorosa: Un nouvel album en prévision et des remixes à télécharger !
+
+mixin concert()
+  li.concert.col2.clearfix
+    a(href="#")
+      .item-cover.concert-cover
+        img.cover.item-cover-img(width="150", heigth="150", src="imgs/mat3r-dolorosa.jpg")
+        span.item-cover-day 02
+      .item-details
+        h3.item-title Mat3r Dolorosa
+        p.item-subtitle.concert-address
+          | Miribel-les-Echelles, 38380
+          br
+          | Fesitval Col des 1000
+
+mixin release(youtubeUrl)
+  li.concert.col2.clearfix
+    if youtubeUrl
+      -var _href   = youtubeUrl
+      -var _class  = "youtube-link"
+      -var _target = "_blank"
+    else
+      -var _href   = "#"
+      -var _class  = "internal-link"
+      -var _target = ""
+
+    a(href=_href, target=_target, class=_class)
+      .item-cover.release-cover
+        img.cover.item-cover-img(width="150", heigth="150", src="imgs/mat3r-dolorosa.jpg")
+      .item-details
+        h3.item-title Mat3r Dolorosa
+        p.item-subtitle.concert-address
+          if youtubeUrl
+            | #{youtubeUrl}
+          else
+            | Miribel-les-Echelles, 38380
+            br
+            | Fesitval Col des 1000

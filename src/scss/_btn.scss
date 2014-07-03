@@ -1,0 +1,33 @@
+.btn-container {
+  position: relative;
+  text-align: center;
+
+  &::after {
+    content: "";
+    display: block;
+    z-index: 10;
+    position: absolute;
+    top: 31px; left: 0; right: 0;
+    height: 2px;
+    background-color: $red;
+  }
+}
+
+  .btn {
+    position: relative;
+    z-index: 20;
+    display: inline-block;
+    padding: 20px 30px 18px 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: $grey--light;
+    border-radius: 4px;
+    color: $red;
+    border: 3px solid $red;
+    transition: color .3s ease-in;
+    transition: background-color .2s ease-out;
+    &:hover {
+      background-color: $red;
+      color: #fff;
+    }
+  }

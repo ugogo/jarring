@@ -1,0 +1,32 @@
+.section-title {
+  // position: relative;
+  // left: -.5em;
+  font-family: $raleway;
+  font-size: 90px;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: $red;
+}
+.main-section {
+  &  > .col-container,
+     > h2 {
+      padding-left: 20px;
+     }
+}
+
+.news-title {
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.item-title {
+  font-size: 30px;
+  line-height: normal;
+  color: $grey--dark;
+}
+.item-subtitle {
+  font-size: 16px;
+  line-height: 1.6;
+  color: $grey--dark--lighter;    
+}

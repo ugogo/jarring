@@ -1,0 +1,52 @@
+// Font-face
+@font-face {
+    font-family: 'ralewayextrabold';
+    src: url('../fonts/raleway-extrabold.svg#ralewayextrabold') format('svg');
+    src: url('../fonts/raleway-extrabold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-extrabold.woff') format('woff'),
+         url('../fonts/raleway-extrabold.ttf') format('truetype'),
+         url('../fonts/raleway-extrabold.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'plutomedium';
+    src: url('../fonts/pluto-medium.svg#plutomedium') format('svg');
+    src: url('../fonts/pluto-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pluto-medium.woff') format('woff'),
+         url('../fonts/pluto-medium.ttf') format('truetype'),
+         url('../fonts/pluto-medium.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Colors
+$grey--dark: #313131;
+$grey--dark--lighter: #868686;
+$grey--light: #F3F3F3;
+$red: #B24B43;
+
+// Fonts
+$raleway: 'ralewayextrabold', Helvetica, Arial, sans-serif;
+$pluto: 'plutomedium', Helvetica, Arial, sans-serif;
+
+// Mixins
+@mixin font-smoothing{
+  -webkit-font-smoothing: antialiased;
+}
+@mixin red($opacity){
+  background-color: rgba(178,75,67, $opacity);
+}
+
+// Placeholders
+%col {
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: top;
+  &:first-child {
+    padding-left: 0;
+  }
+}
+
+
+

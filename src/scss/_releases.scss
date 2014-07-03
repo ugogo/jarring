@@ -1,0 +1,22 @@
+.youtube-link {
+  .release-cover {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      display: block;
+      z-index: 10;
+      @include red(1);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%; left: 50%;
+      z-index: 20;
+      display: block;
+      width: 44px; height: 34px;
+      margin: -17px 0 0 -22px;
+      background-image: url("../imgs/icon-youtube.png");
+    }
+  }
+}

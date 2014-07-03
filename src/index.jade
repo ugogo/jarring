@@ -1,0 +1,62 @@
+extends _partials/layout
+
+block head
+  title Jarring Effects - Label indépendant
+
+block content
+  .page-container
+    header.main-header
+      img.jarring-logo(src="imgs/logo.png")
+      ul.main-nav
+        li: a(href="#") Home
+        li: a(href="#") News
+        li: a(href="#") Concerts
+        li: a(href="#") Releases
+        li: a(href="#") Jarring
+        li: a(href="#") Contact
+    section.main-section.news-section
+      h1.section-title News
+      ul.col-container
+        +news()
+        +news()
+        +news()
+      +btn("Voir plus de news")
+
+    section.main-section
+      h1.section-title Concerts
+      h2.concert-month Septembre
+      ul.concerts-container.col-container
+        +concert()
+        +concert()
+        +concert()
+        +concert()
+      h2.concert-month Octobre
+      ul.concerts-container.col-container
+        +concert()
+        +concert()
+        +concert()
+        +concert()
+      +btn("Voir le calendrier")
+
+    section.main-section
+      h1.section-title Releases
+      ul.releases-container.col-container
+        +release()
+        +release("https://www.youtube.com/watch?v=clyBbpeKdhw")
+        +release()
+        +release()
+      +btn("Voir plus de releases")
+
+    footer.main-footer
+      h1.section-title Contact
+      ul.social-links
+        li: a(href="http://twitter.com/JarringEffects", target="_blank") Twitter
+        li: a(href="http://www.facebook.com/jarring.effects", target="_blank") Facebook
+      p.footer-contact 13, Rue Rene Leynaud
+        br
+        |69001 LYON - FRANCE
+      p.footer-contact T: +33(0) 478 305 029
+        br
+        |E:
+        a(href="mailto:contact@jarringeffects.net") contact@jarringeffects.net
+

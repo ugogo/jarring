@@ -1,0 +1,34 @@
+.concert {
+  margin-top: 20px;
+}
+  
+  .concerts-container {
+    & + .concert-month {
+      margin-top: 70px;
+    }
+  }
+  .concert-month {
+    font-family: $raleway;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: $grey--dark;
+  }
+
+  .concert-cover {
+    &::after {
+      content: "";
+      display: block;
+      z-index: 10;
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      @include red(.7);
+    }
+  }
+
+    .concert-address {
+      margin-top: 4px;
+    }
+
+
+
+

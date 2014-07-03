@@ -1,0 +1,40 @@
+.main-header {
+  padding: 100px 0 60px 0;
+
+  .jarring-logo {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    width: 40px; height: 6px;
+    margin: 20px auto 0 auto;
+    background-color: $grey--dark;
+  }
+}
+
+.main-nav {
+  width: 500px;
+  margin: 20px auto 0 auto;
+  text-align: center;
+  border-top: 1px solid $grey--dark--lighter;
+  border-bottom: 1px solid $grey--dark--lighter;
+
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+    padding: 20px 8px 18px 8px;
+    font-size: 18px;
+    letter-spacing: -.02em;
+    color: $grey--dark--lighter;
+    transition: color .3s ease-out;
+
+    &:hover {
+      color: $grey--dark;
+    }
+  }
+}
