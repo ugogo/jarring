@@ -1,4 +1,6 @@
-#Jarring Effects (Cifacom)
+#School project
+
+###Jarring Effects
 
 Direct URL: http://onaliugo.fr/lab/jarring/
 
